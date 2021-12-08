@@ -104,8 +104,8 @@ def main():
 			       the model in classifying the sentiments of tweets on climate change')
 
 		st.info('Distribution of tweet sentiments')
-		st.image('EDA_files\sentiment_count.png')
-		st.image('EDA_files\sentiment_distribution.png')
+		st.image('sentimentcount.png')
+		st.image('sentimentdist.png')
 		st.markdown(
 			'A density plot is a representation of the distribution of a numeric variable .\
 			Looking at the four density graphs(for positive,negative,neutral and news) \
@@ -117,7 +117,7 @@ def main():
 			)
 
 		st.info('Message length comparisons Across All Sentiment Classes')
-		st.image('EDA_files\msglen.png')
+		st.image('msglen.png')
 		st.markdown(
 		"Sentiment analysis is a technique that detects the underlying sentiment in a piece of text.\
 	    It is the process of classifying text as either positive, negative, neutral or news.\
@@ -129,7 +129,7 @@ def main():
 		* the neutral sentiment( tweets with neutral massege) has a length of slightly above 100 they don't write long tweets as conmpared to the rest")
 
 		st.info('Anticlimate Sentiments Word Cloud')
-		st.image('EDA_files\hnticlimate.png')
+		st.image('hanticlimate.png')
 		st.markdown(
 			"We see a lot of negative words such as `fake`,`scam`,`hoax`, `manipulated`, `manmade`, `chinese`.etc\
 			These are words which are mostly used by people who are against climate change.\
@@ -137,7 +137,7 @@ def main():
 			)
 
 		st.info('Proclimate Sentiments Word Cloud')
-		st.image('EDA_files\proclimate.png')
+		st.image('hproclimate.png')
 		st.markdown(
 			"It looks like the news tweets are mostly retweets, we see words like `climatechange`, `environment`,\
 			`change`, `climate`, which is what we would expect considering the project is about climate change\
@@ -145,13 +145,13 @@ def main():
 			`scientist`, `study`, `expert`, `policies` which are unique to the news tweets.")
 
 		st.info('News Headlines Word Cloud')
-		st.image('EDA_files\headlines.png')
+		st.image('hnews.png')
 		st.markdown(
 			"Here we see a lot of positive words, words that calls for help or action,\
 			 words such as `believe`, `action`, `real`, `think`, `environment`, ... etc.")
 
 		st.info('Nuetral Sentiments Word Cloud')
-		st.image('EDA_files\gnuetral.png')
+		st.image('hnuetral.png')
 		st.markdown(
 			"Here we see words like such as `penguin`, `people`, `global` which are classified as neutral sentiment tweets.\
 			and we see words like `retweet` which suggest that also most of the tweets are retweets.\
@@ -159,21 +159,21 @@ def main():
 		)
 
 		st.info('Top 20 Climate Change Hashtags')
-		st.image('EDA_files\gtop20#.png')
+		st.image('gtop20#.png')
 		st.markdown(
 			'Here we see words like such as `penguin`, `people`, `global` which are classified as neutral sentiment tweets.\
 			and we see words like `retweet` which suggest that also most of the tweets are retweets. the neutral tweets,\
 			they normally tweet about anything'
 		)
 		st.info('Top 20 Climate Change News Headlines ')
-		st.image('EDA_files\gtop20n.png')
+		st.image('gtop20n.png')
 		st.markdown(
 			'It looks like the news tweets are mostly retweets, we see words like `climatechange`, `environment`, `change`,\
 			`climate`, which is what we would expect considering the project is about climate change but we see words like `research`,\
 			`washingtonpost`, `cnn`,`scientist`, `study`, `expert`, `policies` which are unique to the news tweets.'
 		)
 		st.info('Top 20 positive climate change tweets')
-		st.image('EDA_files\gtop20pl.png')
+		st.image('gtop20pl.png')
 		st.markdown(
 			'see a lot of positive words, words that calls for help or action, words such as `believe`, `action`, `real`, `think`, `environment`, ... etc.'
 		)
