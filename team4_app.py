@@ -29,11 +29,11 @@ import joblib,os
 import pandas as pd
 
 # Vectorizer
-news_vectorizer = open("resources/tfidfvect.pkl","rb")#waiting for team4 vectorizer
+news_vectorizer = open("vect.pkl","rb")#waiting for team4 vectorizer
 tweet_cv = joblib.load(news_vectorizer) # loading your vectorizer from the pkl file
 
 # Load your raw data
-raw = pd.read_csv("resources/train.csv")
+raw = pd.read_csv("train.csv")
 
 # The main function where we will build the actual app
 def main():
@@ -90,7 +90,7 @@ def main():
 			vect_text = tweet_cv.transform([tweet_text]).toarray()
 			# Load your .pkl file with the model of your choice + make predictions
 			# Try loading in multiple models to give the user a choice
-			predictor = joblib.load(open(os.path.join("lr.pkl"),"rb"))
+			predictor = joblib.load(open(os.path.join("final_lsvc.pkl"),"rb"))
 			prediction = predictor.predict(vect_text)
 
 			# When model has successfully run, will print prediction
